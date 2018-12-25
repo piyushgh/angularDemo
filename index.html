@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="myModule">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular demo</title>
+    <script type="text/javascript" src="scripts/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/controller.js"></script>
+  </head>
+<body>
+  <div ng-controller="myController">
+    {{  message}}
+      <div ng-include="'demo1.html'">
+      </div>
+  </div>
+  <div ng-include="'demo2.html'">
+  </div>
+</body>
+</html>
